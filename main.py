@@ -1,5 +1,6 @@
 import csv
 from itertools import zip_longest
+import sys
 import requests
 from bs4 import BeautifulSoup
 import os
@@ -22,10 +23,12 @@ def main(cookies, file_name):
     cookies_error = "Please paste a valid moodle cookies\n"
 
     try:
+        print("\nRequesting...")
         response = requests.get('https://uspflm.com/calendar/view.php', params=params, cookies=cookies)
     except:
         os.system("cls")
         print(cookies_error)
+        sys.exit()
 
     soup = BeautifulSoup(response.text, "html.parser")
     get_links = soup.find_all("a", {"class":"card-link"})
@@ -61,11 +64,11 @@ def main(cookies, file_name):
             time_date_list.append(get_time_datess)
         else:
             continue
-
+        
     for get_titles in get_title:
         get_titles = get_titles.string
         titles_list.append(get_titles)
-
+        
     for get_linkss in get_links:
         get_linkss = get_linkss["href"]
         links_list.append(get_linkss)
