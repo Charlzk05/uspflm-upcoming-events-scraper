@@ -3,7 +3,7 @@ Using python Requests, BeautifulSoup, csv, zip_longest to extract Upcoming Event
 
 ## Installation
 - Download python 3.10 above. ([Official python download](https://www.python.org/downloads/))
-- Download main.py
+- Download [main.py](https://github.com/Charlzk05/uspflm-upcoming-events-scrapper/archive/refs/heads/main.zip)
 - Install packages.
 ```python
 pip install requests
