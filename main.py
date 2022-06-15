@@ -87,7 +87,7 @@ def main(cookies, file_name):
 
 if __name__ == "__main__":
     try:
-        print("USPFLM Upcoming Events Scrapper by Charliezkie.\n")
+        print("USPFLM Upcoming Events Scraper by Charliezkie.\n")
         moodle_cookies = input("Insert your moodle cookies: ")
         file_naming = input("Insert a file name (optional) (press enter to skip): ")
         if file_naming == "":
