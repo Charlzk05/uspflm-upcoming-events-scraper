@@ -1,5 +1,5 @@
 ## USPFLM Upcoming Events Scrapper
-Using Python Requests, BeautifulSoup, csv, zip_longest to extract Upcoming Events to csv file from USPFLM calendar.
+Using Python Requests, BeautifulSoup, csv to extract Upcoming Events to csv file from USPFLM calendar.
 
 ## Installation
 - Download python 3.10 above. ([Official python download](https://www.python.org/downloads/))
