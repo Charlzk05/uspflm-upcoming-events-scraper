@@ -1,8 +1,8 @@
-import csv
+from bs4 import BeautifulSoup
 from itertools import zip_longest
+import csv
 import sys
 import requests
-from bs4 import BeautifulSoup
 import os
 
 error_print = "Something went wrong :/"
